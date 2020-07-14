@@ -13,7 +13,7 @@
   display: none;
 }
 
-#videoPreviewContent>iframe{
+#videoPreviewContent>iframe, #videoPreviewContent>img{
   margin: auto;
   width: 60%;
   height: 70%;
@@ -39,10 +39,11 @@ button#closePreviewButton{
   padding: 10px;
 }
 button.thumbnail{
-  /* width: 240px;
-  height: 140px; */
   border: none;
   background: none;
+  transition: 0.5s;
+  padding: 0 0;
+  margin: 5px;
 }
 .thumbnail>img{
   width: 230px;
@@ -50,11 +51,18 @@ button.thumbnail{
 }
 button.thumbnail:hover, button:hover{
   cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(1, 1, 1, 0.5);
 }
 img.proj_thumb{
   width: 240px!important;
   height:auto!important;
   margin-top: 20px;
+  transition: 0.5s;
+  /* box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.25); */
+}
+img.proj_thumb:hover{
+cursor: pointer;
+box-shadow: 5px 5px 10px rgba(1, 1, 1, 0.5);
 }
 td>iframe{
   margin-top: 20px;

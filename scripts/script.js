@@ -8,6 +8,14 @@ function ShowVideo(link){
   $('#videoPreview').show();
 }
 
+function ShowImage(image){
+  console.log(image);
+    var toAdd = '<img src="'+image.attr('src')+'"></img>';
+    $('#videoPreviewContent').html(toAdd);
+    $('#videoPreview').show();
+}
+
 function ClosePreview(){
-$('#videoPreview').hide();
+  $('#videoPreviewContent').html("");
+  $('#videoPreview').hide();
 }
